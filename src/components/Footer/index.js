@@ -42,9 +42,9 @@ const Foot = () => {
         </div>
         <div className='md:place-self-center md:justify-self-end'>
           <div className='grid grid-flow-col gap-4'>
-            <img alt='github' src={icon1} height='30px' width='30px'></img>
-            <img alt='linkedin' src={icon2} height='30px' width='30px'></img>
-            <img alt='instagram' src={icon3} height='30px' width='30px'></img>
+            <a href="https://github.com/Miacarmen"><img alt='github' src={icon1} height='30px' width='30px'></img></a>
+            <a href="https://www.linkedin.com/in/mia-carmen-7750a6b8/"><img alt='linkedin' src={icon2} height='30px' width='30px'></img></a>
+            <a href="https://www.instagram.com/thedevilsdisko/"><img alt='instagram' src={icon3} height='30px' width='30px'></img></a>
           </div>
         </div>
       </footer>
