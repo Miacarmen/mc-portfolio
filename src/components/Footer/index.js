@@ -5,7 +5,7 @@ import icon1 from '../../images/github.png';
 import icon2 from '../../images/linkedin.png';
 import icon3 from '../../images/instagram.png';
 
-const Foot = ({ currentPage, handlePageChange }) => {
+const Foot = () => {
   return (
     <div>
       <footer class='footer p-10 bg-base-100 text-base-content justify-items-center'>

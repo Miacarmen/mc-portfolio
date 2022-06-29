@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Card, Button } from 'react-daisyui';
 
 const Resume = () => {
@@ -13,11 +12,11 @@ const Resume = () => {
             </h2>
             <div className='card-actions justify-center'>
               <Button className='btn btn-primary '>
-                <Link to='../images/Mia-Carmen_Web_Developer.png'
+                <a href='../images/Mia-Carmen_Web_Developer.png'
                   download='Mia-Carmen_Web_Developer.png'
                 >
                   Download
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

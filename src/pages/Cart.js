@@ -14,7 +14,6 @@ const Cart = () => {
             <span className='flex md:justify-end'>- 0 +</span>
         </div>
 
-        
         <div className='controls mt-7 flex justify-end'>
         <p className='mr-4'>Cart Total</p>
         <button className='btn btn-sm btn-primary text-base-100'>Checkout</button>
