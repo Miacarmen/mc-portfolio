@@ -68,13 +68,14 @@ const Nav = () => {
           </ul>
         </div>
 
-        <div className='hidden md:flex items-stretch space-x-4 font-medium'>
+        <div className='hidden md:flex items-stretch space-x-3 font-medium'>
           <Link to='/' className='hover:text-primary-focus'>Home</Link>
           <Link to='/about' className='hover:text-primary-focus'>About</Link>
           <Link to='/contact' className='hover:text-primary-focus'>Contact</Link>
 
           <Link to='/cart' className='hover:text-primary-focus'>
-            <FaShoppingCart size={20} />
+            
+            <div class="badge badge-primary"><FaShoppingCart size={20} />0</div>
           </Link>
         </div>
       </Navbar.End>

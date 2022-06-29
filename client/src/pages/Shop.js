@@ -6,9 +6,19 @@ import img3 from "../images/Temper.png";
 import img4 from "../images/Devil3.png";
 import img5 from "../images/Devils-Disco-Top.png";
 import img6 from "../images/Devils-Disco-Bottom.png";
+import Nav from '../components/Navbar';
+import data from '../productData.json';
 
-// * TO-DO: When a user clicks add to cart, add item to cart, change button to say "added"
+// TO-DO: create product card for each product in DB
+
+// TO-DO: When a user clicks add to cart, 
+// add item to cart, 
+// update number on cart icon, 
+// change button to say "added"
+
+
 const Prints = () => {
+
   return (
     <div className="bg-base-200">
       <h1 className="pt-5 text-3xl font-bold text-base-300 text-center">Prints</h1>
@@ -17,6 +27,8 @@ const Prints = () => {
           <div className="card-body">
             <img alt="Swimming" src={img1}></img>
             <Card.Title>Swimming</Card.Title>
+            <p className="text-sm">8.5 x 11</p>
+            <p className="text-sm">$20</p>
             <div className="card-actions justify-center">
               <button className="btn btn-primary buyNow">Add to Cart</button>
             </div>
@@ -27,6 +39,8 @@ const Prints = () => {
           <div className="card-body">
             <img alt="Feral" src={img2}></img>
             <Card.Title>Feral</Card.Title>
+            <p className="text-sm">8.5 x 11</p>
+            <p className="text-sm">$20</p>
             <div className="card-actions justify-center">
               <button className="btn btn-primary buyNow">Add to Cart</button>
             </div>
@@ -39,6 +53,8 @@ const Prints = () => {
             <Card.Title>
               Careful Now, She's Got a Temper
             </Card.Title>
+            <p className="text-sm">8.5 x 11</p>
+            <p className="text-sm">$20</p>
             <div className="card-actions justify-center">
               <button className="btn btn-primary buyNow">Add to Cart</button>
             </div>
@@ -48,7 +64,9 @@ const Prints = () => {
         <Card className="card lg:card-side bg-base-100 shadow-xl mb-5">
           <div className="card-body">
             <img alt="Devil Girl" src={img4}></img>
-            <Card.Title>Good Girl</Card.Title>
+            <Card.Title>She's a Good Girl</Card.Title>
+            <p className="text-sm">8.5 x 11</p>
+            <p className="text-sm">$20</p>
             <div className="card-actions justify-center">
               <button className="btn btn-primary buyNow">Add to Cart</button>
             </div>
@@ -60,8 +78,9 @@ const Prints = () => {
             <img alt="Devil's Disco" src={img5}></img>
             <Card.Title>The Devils Disco</Card.Title>
             <p>**Animation Under Construction</p>
+            <p>Not for sale (yet)</p>
             <div className="card-actions justify-center">
-              <button className="btn btn-primary buyNow">Add to Cart</button>
+              <button className="btn btn-primary buyNow disable">Add to Cart</button>
             </div>
           </div>
         </Card>
@@ -71,8 +90,9 @@ const Prints = () => {
             <img alt="Devil's Disco" src={img6}></img>
             <Card.Title>The Devils Disco</Card.Title>
             <p>**Animation Under Construction</p>
+            <p>Not for sale (yet)</p>
             <div className="card-actions justify-center">
-              <button className="btn btn-primary buyNow">Add to Cart</button>
+              <button className="btn btn-primary buyNow disable">Add to Cart</button>
             </div>
           </div>
         </Card>

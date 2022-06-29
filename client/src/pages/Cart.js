@@ -1,5 +1,11 @@
 import React from 'react'
 
+// TO-DO: update with products added and update total price 
+// TO-DO: add or minus num of products, update total price
+// TO-DO: delete product from cart
+
+// TO-DO: onClick of btn, prompt to add shipping and payment
+// TO-DO: sweet alert on payment completion
 const Cart = () => {
   return (
     <div className='bg-base-200 py-12'>
@@ -8,7 +14,7 @@ const Cart = () => {
         {/* display if no items */}
         <p>No Items Currently in Your Cart</p>
         
-        <div className='grid grid-cols-1 md:grid-cols-3'>
+        <div className='cartInfo grid grid-cols-1 md:grid-cols-3'>
             <span className=''>Print Name</span>
             <span className='flex md:justify-center'>Price</span>
             <span className='flex md:justify-end'>- 0 +</span>

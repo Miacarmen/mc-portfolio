@@ -1,0 +1,19 @@
+[
+  {
+    "_id": 1,
+    "title": "Swimming",
+    "desc": "8.5in x 11in",
+    "price": 20.0,
+    "image": "/images/Swimming.png",
+    "count": 0,
+    "countVal": 1,
+    "inCart": false
+  },
+  {
+    "_id": 2,
+    "title": "Feral",
+    "desc": "8.5in x 11in",
+    "price": 20.0,
+    "image": ""
+  }
+]
