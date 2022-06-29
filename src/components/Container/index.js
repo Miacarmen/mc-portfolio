@@ -9,7 +9,7 @@ import Portfolio from "../../pages/Portfolio";
 import Shop from "../../pages/Shop";
 import Cart from '../../pages/Cart';
 
-const PageContainer = () => {
+const Container = () => {
   const [currentPage, setCurrentPage] = useState("Home");
 
   // render current page
@@ -52,4 +52,4 @@ const PageContainer = () => {
   );
 }
 
-export default PageContainer;
+export default Container;
