@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import image2 from '../../images/heart (9).png';
 import icon1 from '../../images/github.png';
 import icon2 from '../../images/linkedin.png';
@@ -17,67 +18,19 @@ const Foot = ({ currentPage, handlePageChange }) => {
         </div>
         <div>
           <span class='footer-title'>Company</span>
-          <a
-            href='#home'
-            onClick={() => handlePageChange('Home')}
-            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-          >
-            Home
-          </a>
-          <a
-            href='#about'
-            onClick={() => handlePageChange('About')}
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-          >
-            About
-          </a>
-          <a
-            href='#resume'
-            onClick={() => handlePageChange('Resume')}
-            className={
-              currentPage === 'Resume' ? 'nav-link active' : 'nav-link'
-            }
-          >
-            Resume
-          </a>
-          <a
-            href='#portfolio'
-            onClick={() => handlePageChange('Portfolio')}
-            className={
-              currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'
-            }
-          >
-            Portfolio
-          </a>
-          <a
-            href='#shop'
-            onClick={() => handlePageChange('Shop')}
-            className={currentPage === 'Shop' ? 'nav-link active' : 'nav-link'}
-          >
-            Shop
-          </a>
-          <a
-            href='#contact'
-            onClick={() => handlePageChange('Contact')}
-            className={
-              currentPage === 'Contact' ? 'nav-link active' : 'nav-link'
-            }
-          >
-            Contact
-          </a>
+          <Link to='/'>Home</Link>
+          <Link to='/about'>About</Link>
+          <Link to='/resume'>Resume</Link>
+          <Link to='/portfolio'>Portfolio</Link>
+          <Link to='/shop'>Shop</Link>
+          <Link to='/contact'>Contact</Link>
         </div>
 
         <div>
           <span class='footer-title'>Legal</span>
-          <a href='/' class='link link-hover'>
-            Terms of use
-          </a>
-          <a href='/' class='link link-hover'>
-            Privacy policy
-          </a>
-          <a href='/' class='link link-hover'>
-            Cookie policy
-          </a>
+          <p class='link link-hover'>Terms of use</p>
+          <p class='link link-hover'>Privacy policy</p>
+          <p class='link link-hover'>Cookie policy</p>
         </div>
       </footer>
       <footer class='footer flex grid grid-cols-3 px-10 pt-2 pb-2 bg-base-100 text-base-content border-base-300'>

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar } from 'react-daisyui';
 import image from '../../images/heart (8).png';
 import '../../styles/Navbar.css';
 import { FaShoppingCart } from 'react-icons/fa';
 
-// * TO-DO: change active link color, and link hover color
+// * TO-DO: change active link color
 
-const Nav = ({ currentPage, handlePageChange }) => {
+const Nav = () => {
   const [expandMenu, setExpandMenu] = useState(false);
 
   return (
@@ -44,113 +45,37 @@ const Nav = ({ currentPage, handlePageChange }) => {
             className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
           >
             <li>
-              <a
-                href='#home'
-                onClick={() => handlePageChange('Home')}
-                className={
-                  currentPage === 'Home' ? 'nav-link active' : 'nav-link'
-                }
-              >
-                Home
-              </a>
+              <Link to='/'>Home</Link>
             </li>
             <li>
-              <a
-                href='#portfolio'
-                onClick={() => handlePageChange('Portfolio')}
-                className={
-                  currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'
-                }
-              >
-                Portfolio
-              </a>
+              <Link to='/portfolio'>Portfolio</Link>
             </li>
             <li>
-              <a
-                href='#resume'
-                onClick={() => handlePageChange('Resume')}
-                className={
-                  currentPage === 'Resume' ? 'nav-link active' : 'nav-link'
-                }
-              >
-                Resume
-              </a>
+              <Link to='/resume'>Resume</Link>
             </li>
             <li>
-              <a
-                href='#shop'
-                onClick={() => handlePageChange('Shop')}
-                className={
-                  currentPage === 'Shop' ? 'nav-link active' : 'nav-link'
-                }
-              >
-                Shop
-              </a>
+              <Link to='/shop'>Shop</Link>
             </li>
             <li>
-              <a
-                href='#about'
-                onClick={() => handlePageChange('About')}
-                className={
-                  currentPage === 'About' ? 'nav-link active' : 'nav-link'
-                }
-              >
-                About
-              </a>
+              <Link to='about'>About</Link>
             </li>
             <li>
-              <a
-                href='#contact'
-                onClick={() => handlePageChange('Contact')}
-                className={
-                  currentPage === 'Contact' ? 'nav-link active' : 'nav-link'
-                }
-              >
-                Contact
-              </a>
+              <Link to='/contact'>Contact</Link>
             </li>
             <li>
-              <a
-                href='#cart'
-                onClick={() => handlePageChange('Cart')}
-                className={
-                  currentPage === 'Cart' ? 'nav-link active' : 'nav-link'
-                }
-              >
-                Cart
-              </a>
+              <Link to='/cart'>Cart</Link>
             </li>
           </ul>
         </div>
 
         <div className='hidden md:flex items-stretch space-x-4 font-medium'>
-          <a
-            href='#home'
-            onClick={() => handlePageChange('Home')}
-            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-          >
-            Home
-          </a>
-          <a
-            href='#about'
-            onClick={() => handlePageChange('About')}
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-          >
-            About
-          </a>
-          <a
-            href='#contact'
-            onClick={() => handlePageChange('Contact')}
-            className={
-              currentPage === 'Contact' ? 'nav-link active' : 'nav-link'
-            }
-          >
-            Contact
-          </a>
+          <Link to='/'>Home</Link>
+          <Link to='/about'>About</Link>
+          <Link to='/contact'>Contact</Link>
 
-          <a href='#cart' onClick={() => handlePageChange('Cart')}>
+          <Link to='/cart'>
             <FaShoppingCart size={20} />
-          </a>
+          </Link>
         </div>
       </Navbar.End>
     </Navbar>
