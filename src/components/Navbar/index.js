@@ -45,35 +45,35 @@ const Nav = () => {
             className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
           >
             <li>
-              <Link to='/'>Home</Link>
+              <Link to='/' className='hover:text-primary-focus'>Home</Link>
             </li>
             <li>
-              <Link to='/portfolio'>Portfolio</Link>
+              <Link to='/portfolio' className='hover:text-primary-focus'>Portfolio</Link>
             </li>
             <li>
-              <Link to='/resume'>Resume</Link>
+              <Link to='/resume' className='hover:text-primary-focus'>Resume</Link>
             </li>
             <li>
-              <Link to='/shop'>Shop</Link>
+              <Link to='/shop' className='hover:text-primary-focus'>Shop</Link>
             </li>
             <li>
-              <Link to='about'>About</Link>
+              <Link to='about' className='hover:text-primary-focus'>About</Link>
             </li>
             <li>
-              <Link to='/contact'>Contact</Link>
+              <Link to='/contact' className='hover:text-primary-focus'>Contact</Link>
             </li>
             <li>
-              <Link to='/cart'>Cart</Link>
+              <Link to='/cart' className='hover:text-primary-focus'>Cart</Link>
             </li>
           </ul>
         </div>
 
         <div className='hidden md:flex items-stretch space-x-4 font-medium'>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/contact'>Contact</Link>
+          <Link to='/' className='hover:text-primary-focus'>Home</Link>
+          <Link to='/about' className='hover:text-primary-focus'>About</Link>
+          <Link to='/contact' className='hover:text-primary-focus'>Contact</Link>
 
-          <Link to='/cart'>
+          <Link to='/cart' className='hover:text-primary-focus'>
             <FaShoppingCart size={20} />
           </Link>
         </div>
