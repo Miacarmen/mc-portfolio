@@ -9,6 +9,7 @@ import About from './pages/About';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
+import Designs from './pages/Designs';
 import Shop from './pages/Shop';
 import Cart from './pages/Cart';
 
@@ -17,16 +18,19 @@ export default function App() {
     <>
       <Router>
         <Nav />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/portfolio' element={<Portfolio />} />
-          <Route path='/resume' element={<Resume />} />
-          <Route path='/shop' element={<Shop />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='*' element={<p>Page Not Found</p>} />
-        </Routes>
+        <div className='wrapper'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/portfolio' element={<Portfolio />} />
+            <Route path='/designs' element={<Designs />} />
+            <Route path='/resume' element={<Resume />} />
+            <Route path='/shop' element={<Shop />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='*' element={<p>Page Not Found</p>} />
+          </Routes>
+        </div>
         <Foot />
       </Router>
     </>

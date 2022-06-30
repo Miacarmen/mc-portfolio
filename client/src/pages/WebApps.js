@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Card } from 'react-daisyui';
-import ScrollArrow from '../components/ScrollArrow';
+
 import p1 from '../images/GirlyNoteTaker.png';
 import p2 from '../images/DayPlanner.png';
 import p3 from '../images/MiseEnPlace.png';
 
-const Portfolio = () => {
+const WebApps = () => {
   return (
     <div className='bg-base-200'>
       <div className='container max-w-screen-lg mx-auto pb-10 text-primary'>
@@ -73,21 +72,9 @@ const Portfolio = () => {
           </a>
           <img alt='Mise en Place' src={p3}></img>
         </Card>
-
-        <ScrollArrow />
-
-        <div class='flex justify-center btn-group mt-8'>
-          <Link to='/portfolio'>
-            <button class='btn btn-base btn-active'>1</button>
-          </Link>
-          <Link to='/designs'>
-            <button class='btn btn-base'>2</button>
-          </Link>
-          <button class='btn btn-base'>3</button>
-        </div>
       </div>
     </div>
   );
 };
 
-export default Portfolio;
+export default WebApps;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar } from 'react-daisyui';
 import image from '../../images/heart (8).png';
-import '../../styles/Navbar.css';
+import './Navbar.css';
 import { BiShoppingBag } from 'react-icons/bi';
 
 // * TO-DO: change active link color
@@ -45,37 +45,58 @@ const Nav = () => {
             className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
           >
             <li>
-              <Link to='/' className='hover:text-primary-focus'>Home</Link>
+              <Link to='/' className='hover:text-primary-focus'>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to='/portfolio' className='hover:text-primary-focus'>Portfolio</Link>
+              <Link to='/portfolio' className='hover:text-primary-focus'>
+                Portfolio
+              </Link>
             </li>
             <li>
-              <Link to='/resume' className='hover:text-primary-focus'>Resume</Link>
+              <Link to='/resume' className='hover:text-primary-focus'>
+                Resume
+              </Link>
             </li>
             <li>
-              <Link to='/shop' className='hover:text-primary-focus'>Shop</Link>
+              <Link to='/shop' className='hover:text-primary-focus'>
+                Shop
+              </Link>
             </li>
             <li>
-              <Link to='about' className='hover:text-primary-focus'>About</Link>
+              <Link to='about' className='hover:text-primary-focus'>
+                About
+              </Link>
             </li>
             <li>
-              <Link to='/contact' className='hover:text-primary-focus'>Contact</Link>
+              <Link to='/contact' className='hover:text-primary-focus'>
+                Contact
+              </Link>
             </li>
             <li>
-              <Link to='/cart' className='hover:text-primary-focus'>Cart</Link>
+              <Link to='/cart' className='hover:text-primary-focus'>
+                Cart
+              </Link>
             </li>
           </ul>
         </div>
 
         <div className='hidden md:flex items-stretch space-x-3 font-medium'>
-          <Link to='/' className='hover:text-primary-focus'>Home</Link>
-          <Link to='/about' className='hover:text-primary-focus'>About</Link>
-          <Link to='/contact' className='hover:text-primary-focus'>Contact</Link>
+          <Link to='/' className='hover:text-primary-focus'>
+            Home
+          </Link>
+          <Link to='/about' className='hover:text-primary-focus'>
+            About
+          </Link>
+          <Link to='/contact' className='hover:text-primary-focus'>
+            Contact
+          </Link>
 
           <Link to='/cart' className='hover:text-primary-focus'>
-            
-            <div class="badge badge-primary"><BiShoppingBag size={20} />0</div>
+            <div class='badge badge-primary'>
+              <BiShoppingBag size={20} />0
+            </div>
           </Link>
         </div>
       </Navbar.End>

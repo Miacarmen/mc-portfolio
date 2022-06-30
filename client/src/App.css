@@ -1,12 +1,24 @@
+/* importing font */
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
-
-/* importing font */
-@import url('https://fonts.googleapis.com/css?family=Cairo');
-
-
+.wrapper {
+  min-height: 100vh;
+  margin: 0 auto -50px;
+  padding-bottom: 60px;
+}
 
 .myName {
   background-image: url(https://media.giphy.com/media/3o7aDdSjGlUbmwFCQo/giphy.gif);
@@ -16,7 +28,7 @@
   text-transform: uppercase;
   font-size: 6em;
   margin: 10px 0;
-  font-family: "Bungee", sans-serif;
+  font-family: 'Bungee', sans-serif;
 }
 
 /* flame skull pink https://media.giphy.com/media/3o7aDdSjGlUbmwFCQo/giphy.gif */
@@ -34,9 +46,9 @@
 /* pink orange yellow flowy thing https://media.giphy.com/media/3o85xH0vZ6np1ciShW/giphy.gif */
 
 .scrollTop {
-  position: fixed; 
+  position: fixed;
   width: 100%;
-  left: 40%;
+  left: 38%;
   bottom: 20px;
   align-items: center;
   justify-content: right;
@@ -48,9 +60,9 @@
 }
 
 #upArrow {
-  position: fixed; 
+  position: fixed;
   width: 100%;
-  left: 40%;
+  left: 38%;
   bottom: 34px;
   align-items: center;
   justify-content: right;

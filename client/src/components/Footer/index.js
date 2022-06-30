@@ -18,19 +18,37 @@ const Foot = () => {
         </div>
         <div>
           <span className='footer-title'>Company</span>
-          <Link to='/' className='hover:text-primary-focus'>Home</Link>
-          <Link to='/about' className='hover:text-primary-focus'>About</Link>
-          <Link to='/resume' className='hover:text-primary-focus'>Resume</Link>
-          <Link to='/portfolio' className='hover:text-primary-focus'>Portfolio</Link>
-          <Link to='/shop' className='hover:text-primary-focus'>Shop</Link>
-          <Link to='/contact' className='hover:text-primary-focus'>Contact</Link>
+          <Link to='/' className='hover:text-primary-focus'>
+            Home
+          </Link>
+          <Link to='/about' className='hover:text-primary-focus'>
+            About
+          </Link>
+          <Link to='/resume' className='hover:text-primary-focus'>
+            Resume
+          </Link>
+          <Link to='/portfolio' className='hover:text-primary-focus'>
+            Portfolio
+          </Link>
+          <Link to='/shop' className='hover:text-primary-focus'>
+            Shop
+          </Link>
+          <Link to='/contact' className='hover:text-primary-focus'>
+            Contact
+          </Link>
         </div>
 
         <div>
           <span className='footer-title'>Legal</span>
-          <p className='link link-hover hover:text-primary-focus'>Terms of use</p>
-          <p className='link link-hover hover:text-primary-focus'>Privacy policy</p>
-          <p className='link link-hover hover:text-primary-focus'>Cookie policy</p>
+          <p className='link link-hover hover:text-primary-focus'>
+            Terms of use
+          </p>
+          <p className='link link-hover hover:text-primary-focus'>
+            Privacy policy
+          </p>
+          <p className='link link-hover hover:text-primary-focus'>
+            Cookie policy
+          </p>
         </div>
       </footer>
       <footer className='footer flex grid grid-cols-3 px-10 pt-2 pb-2 bg-base-100 text-base-content border-base-300'>
@@ -42,9 +60,15 @@ const Foot = () => {
         </div>
         <div className='md:place-self-center md:justify-self-end'>
           <div className='grid grid-flow-col gap-4'>
-            <a href="https://github.com/Miacarmen"><img alt='github' src={icon1} height='30px' width='30px'></img></a>
-            <a href="https://www.linkedin.com/in/mia-carmen-7750a6b8/"><img alt='linkedin' src={icon2} height='30px' width='30px'></img></a>
-            <a href="https://www.instagram.com/thedevilsdisko/"><img alt='instagram' src={icon3} height='30px' width='30px'></img></a>
+            <a href='https://github.com/Miacarmen'>
+              <img alt='github' src={icon1} height='30px' width='30px'></img>
+            </a>
+            <a href='https://www.linkedin.com/in/mia-carmen-7750a6b8/'>
+              <img alt='linkedin' src={icon2} height='30px' width='30px'></img>
+            </a>
+            <a href='https://www.instagram.com/thedevilsdisko/'>
+              <img alt='instagram' src={icon3} height='30px' width='30px'></img>
+            </a>
           </div>
         </div>
       </footer>
