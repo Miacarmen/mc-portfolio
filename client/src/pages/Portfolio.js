@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-daisyui';
+import ScrollArrow from '../components/ScrollArrow';
 import p1 from '../images/GirlyNoteTaker.png';
 import p2 from '../images/DayPlanner.png';
 import p3 from '../images/MiseEnPlace.png';
@@ -8,6 +9,9 @@ const Portfolio = () => {
   return (
     <div className='bg-base-200'>
       <div className='container max-w-screen-lg mx-auto pb-10 text-primary'>
+      <h1 className='pt-5 text-3xl font-bold text-base-300 text-center'>
+        Web Applications
+      </h1>
         <Card>
           <h1 className='mt-7 font-bold text-2xl'>
             A Cute and Girly Notetaker
@@ -68,14 +72,20 @@ const Portfolio = () => {
           </a>
           <img alt='Mise en Place' src={p3}></img>
         </Card>
+
+        <ScrollArrow />
+
+        <div class='flex justify-center btn-group mt-8'>
+        <button class='btn btn-base btn-active'>1</button>
+        <button class='btn btn-base'>2</button>
+        <button class='btn btn-base'>3</button>
       </div>
 
-      <div class='btn-group'>
-        <button class='btn'>1</button>
-        <button class='btn btn-active'>2</button>
-        <button class='btn'>3</button>
-        <button class='btn'>4</button>
       </div>
+
+      
+
+      
     </div>
   );
 };

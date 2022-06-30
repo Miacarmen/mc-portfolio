@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/styles.css';
+import '../App.css';
 import { Hero, Button } from 'react-daisyui';
 
 const Home = () => {
