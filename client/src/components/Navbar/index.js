@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Navbar } from 'react-daisyui';
 import image from '../../images/heart (8).png';
 import '../../styles/Navbar.css';
-import { FaShoppingCart } from 'react-icons/fa';
+import { BiShoppingBag } from 'react-icons/bi';
 
 // * TO-DO: change active link color
 
@@ -75,7 +75,7 @@ const Nav = () => {
 
           <Link to='/cart' className='hover:text-primary-focus'>
             
-            <div class="badge badge-primary"><FaShoppingCart size={20} />0</div>
+            <div class="badge badge-primary"><BiShoppingBag size={20} />0</div>
           </Link>
         </div>
       </Navbar.End>
