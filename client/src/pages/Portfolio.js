@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Card } from 'react-daisyui';
 import ScrollArrow from '../components/ScrollArrow';
+import Paginate from '../components/Paginate';
 import p1 from '../images/GirlyNoteTaker.png';
 import p2 from '../images/DayPlanner.png';
 import p3 from '../images/MiseEnPlace.png';
 import p4 from '../images/ab.png';
+
 
 const Portfolio = () => {
   return (
@@ -97,15 +98,7 @@ const Portfolio = () => {
 
         <ScrollArrow />
 
-        <div class='flex justify-center btn-group mt-8'>
-          <Link to='/portfolio'>
-            <button class='btn btn-base btn-active'>1</button>
-          </Link>
-          <Link to='/designs'>
-            <button class='btn btn-base'>2</button>
-          </Link>
-          <button class='btn btn-base'>3</button>
-        </div>
+        <Paginate />
       </div>
     </div>
   );
