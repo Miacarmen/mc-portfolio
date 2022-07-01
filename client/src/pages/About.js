@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../images/HeadShot.jpg';
+import { Link } from 'react-router-dom';
 import img from '../images/pink.jpg';
 
 const About = () => {
@@ -36,7 +36,7 @@ const About = () => {
                 you step outside your comfort zone and create eyecatching
                 content, I'm your gal.
               </p>
-              <button className='btn btn-primary'>See my Work</button>
+              <Link to="/portfolio"><button className='btn btn-primary'>See my Work</button></Link>
             </div>
           </div>
 

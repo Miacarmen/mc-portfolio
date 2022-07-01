@@ -5,6 +5,7 @@ import ScrollArrow from '../components/ScrollArrow';
 import p1 from '../images/GirlyNoteTaker.png';
 import p2 from '../images/DayPlanner.png';
 import p3 from '../images/MiseEnPlace.png';
+import p4 from '../images/ab.png';
 
 const Portfolio = () => {
   return (
@@ -33,6 +34,26 @@ const Portfolio = () => {
             Live Site Here
           </a>
           <img alt='Girly Note Taker' src={p1}></img>
+        </Card>
+
+        <Card>
+          <h1 className='mt-7 font-bold text-2xl'>Adventure Book</h1>
+          <p>Get Inspired, Plan Your Next Adventure</p>
+          <a
+            href='https://github.com/Miacarmen/adventure-book'
+            target='blank'
+            className='text-secondary'
+          >
+            Link to Github
+          </a>
+          <a
+            href='https://book-adventure.herokuapp.com/'
+            target='blank'
+            className='text-secondary'
+          >
+            Live Site Here
+          </a>
+          <img alt='Adventure Book' src={p4}></img>
         </Card>
 
         <Card>

@@ -3,7 +3,7 @@ import { Card, Button } from 'react-daisyui';
 
 const Resume = () => {
   return (
-    <div className='bg-base-200'>
+    <div className='wrapper flex justify-center items-center bg-base-200'>
       <div className='container max-w-screen-lg mx-auto pt-10 pb-10'>
         <Card className='card bg-base-100 shadow-xl text-center mb-5'>
           <div className='card-body'>
@@ -12,7 +12,8 @@ const Resume = () => {
             </h2>
             <div className='card-actions justify-center'>
               <Button className='btn btn-primary '>
-                <a href='../images/Mia-Carmen_Web_Developer.png'
+                <a
+                  href='../images/Mia-Carmen_Web_Developer.png'
                   download='Mia-Carmen_Web_Developer.png'
                 >
                   Download
