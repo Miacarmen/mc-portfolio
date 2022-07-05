@@ -28,15 +28,17 @@ const About = () => {
 
               <p className='pt-3 pb-4'>
                 Having always had a passion for art and design, I have found web
-                developement to be the most rewarding way to combine my love for both
-                design and tech, and create intuitive and dynamic user
-                experiences from a fresh and unique perspective. My personal style is
-                either super tacky girly, or dark and mischievous, but know how
-                to find that refined happy middle. If you're looking for someone to help
-                you step outside your comfort zone and create eyecatching
-                content, I'm your gal.
+                developement to be the most rewarding way to combine my love for
+                both design and tech, and create intuitive and dynamic user
+                experiences from a fresh and unique perspective. My personal
+                style is either super tacky girly, or dark and mischievous, but
+                know how to find that refined happy middle. If you're looking
+                for someone to help you step outside your comfort zone and
+                create eyecatching content, I'm your gal.
               </p>
-              <Link to="/portfolio"><button className='btn btn-primary'>See my Work</button></Link>
+              <Link to='/portfolio'>
+                <button className='btn btn-primary'>See my Work</button>
+              </Link>
             </div>
           </div>
 
@@ -63,7 +65,6 @@ const About = () => {
                   <li>Bootstrap</li>
                   <li>TailwindCSS</li>
                   <li>MaterialUI</li>
-                  <li>DaisyUI</li>
                   <li>Sass</li>
                   <li>Handlebars</li>
                   <li>React</li>
@@ -87,13 +88,9 @@ const About = () => {
                   <li>MERN Stack</li>
                   <li>MVC</li>
                   <li>PWAs</li>
-                  <li>OOP</li>
-                  <li>Git</li>
-                  <li>Github</li>
                   <li>Jest</li>
                   <li>WebPack</li>
                   <li>Babel</li>
-                  <li>Solidity</li>
                 </ul>
               </div>
             </div>

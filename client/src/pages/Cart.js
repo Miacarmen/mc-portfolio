@@ -7,6 +7,22 @@ import React from 'react';
 // TO-DO: onClick of btn, prompt to add shipping and payment
 // TO-DO: sweet alert on payment completion
 const Cart = () => {
+
+  // increaseCount = () => {
+
+  // }
+
+  // decreaseCount = () => {
+
+  // }
+  // getItemTotal = () => {
+
+  // }
+
+  // getPriceTotal = () => {
+
+  // }
+
   return (
     <div className='wrapper bg-base-200 py-12'>
       <div className='container max-w-screen-lg mx-auto pb-10 text-primary bg-white px-7 py-4 rounded-2xl'>

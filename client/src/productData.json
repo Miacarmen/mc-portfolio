@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "title": "Swimming",
+      "desc": "8.5 x 11",
+      "price": 20,
+      "imageURL": "https://i.ibb.co/FmCrF4y/Swimming.png",
+      "inCart": false,
+      "quantity": 0,
+      "counter": 1
+    },
+    {
+      "id": 2,
+      "title": "Feral",
+      "desc": "8.5 x 11",
+      "price": 20,
+      "imageURL": "https://i.ibb.co/sym75CG/Feral.png",
+      "inCart": false,
+      "quantity": 0,
+      "counter": 1
+    },
+    {
+      "id": 3,
+      "title": "Careful Now, She's Got a Temper",
+      "desc": "8.5 x 11",
+      "price": 20,
+      "imageURL": "https://i.ibb.co/tJJNGFr/Temper.png",
+      "inCart": false,
+      "quantity": 0,
+      "counter": 1
+    },
+    {
+      "id": 4,
+      "title": "She's a Good Girl",
+      "desc": "8.5 x 11",
+      "price": 20,
+      "imageURL": "https://i.ibb.co/Zd62qdx/Devil3.png",
+      "inCart": false,
+      "quantity": 0,
+      "counter": 1
+    },
+    {
+      "id": 5,
+      "title": "Tempting",
+      "desc": "8.5 x 11",
+      "price": 15,
+      "imageURL": "https://i.ibb.co/sgg0YsT/Devil1.png",
+      "inCart": false,
+      "quantity": 0,
+      "counter": 1
+    },
+    {
+      "id": 6,
+      "title": "Tempting",
+      "desc": "8.5 x 11",
+      "price": 15,
+      "imageURL": "https://i.ibb.co/dQF2Sjs/Devil2.png",
+      "inCart": false,
+      "quantity": 0,
+      "counter": 1
+    }
+  ]

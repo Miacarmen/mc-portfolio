@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './index.css';
+
 import Nav from './components/Navbar';
 import Foot from './components/Footer';
 import Home from './pages/Home';
@@ -12,6 +13,8 @@ import Portfolio from './pages/Portfolio';
 import Designs from './pages/Designs';
 import Shop from './pages/Shop';
 import Cart from './pages/Cart';
+
+import data from './productData.json';
 
 export default function App() {
   return (

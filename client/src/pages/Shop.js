@@ -1,59 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ProductsContext } from '../context/products.context';
+
 import { Card } from 'react-daisyui';
 import img5 from '../images/Devils-Disco-Top.png';
 import img6 from '../images/Devils-Disco-Bottom.png';
 // import Nav from '../components/Navbar';
 import ScrollArrow from '../components/ScrollArrow';
+import DATA from '../productData.json';
 // TO-DO: When a user clicks add to cart,
 // add item to cart,
 // update number on cart icon,
 // change button to say "added"
 
 const Prints = () => {
-  const prints = [
-    {
-      id: 1,
-      title: 'Swimming',
-      desc: '8.5 x 11',
-      price: '$20.00',
-      imageURL: 'https://i.ibb.co/FmCrF4y/Swimming.png',
-    },
-    {
-      id: 2,
-      title: 'Feral',
-      desc: '8.5 x 11',
-      price: '$20.00',
-      imageURL: 'https://i.ibb.co/sym75CG/Feral.png',
-    },
-    {
-      id: 3,
-      title: "Careful Now, She's Got a Temper",
-      desc: '8.5 x 11',
-      price: '$20.00',
-      imageURL: 'https://i.ibb.co/tJJNGFr/Temper.png',
-    },
-    {
-      id: 4,
-      title: "She's a Good Girl",
-      desc: '8.5 x 11',
-      price: '$20.00',
-      imageURL: 'https://i.ibb.co/Zd62qdx/Devil3.png',
-    },
-    {
-      id: 5,
-      title: 'Tempting',
-      desc: '8.5 x 11',
-      price: '$15.00',
-      imageURL: 'https://i.ibb.co/sgg0YsT/Devil1.png',
-    },
-    {
-      id: 6,
-      title: 'Tempting',
-      desc: '8.5 x 11',
-      price: '$15.00',
-      imageURL: 'https://i.ibb.co/dQF2Sjs/Devil2.png',
-    },
-  ];
+  const {products} = useContext(ProductsContext);
+  // // const [addItem, setAddItem] = useState(printData);
+
+  // // check if item in cart, if true, increase quantity by 1
+  // // if false, create new cart item
+  // const addToCart = () => {
+    
+  // };
 
   return (
     <div className='bg-base-200'>
@@ -61,15 +28,23 @@ const Prints = () => {
         Prints
       </h1>
       <div className='container max-w-screen-lg mx-auto pb-10 text-primary mt-7'>
-        {prints.map((print) => (
-          <Card className='card-title lg:card-side bg-base-100 shadow-xl mb-5'>
+        {products.map((print) => (
+          <Card
+            className='card-title lg:card-side bg-base-100 shadow-xl mb-5'
+            key={print.id}
+          >
             <div className='card-body'>
               <img alt={print.title} src={print.imageURL}></img>
               <Card.Title>{print.title}</Card.Title>
               <p className='text-sm'>{print.desc}</p>
-              <p className='text-sm'>{print.price}</p>
+              <p className='text-sm'>$ {print.price}</p>
               <div className='card-actions justify-center'>
-                <button className='btn btn-primary buyNow'>Add to Cart</button>
+                <button
+                  className='btn btn-primary buyNow'
+                  onClick={() => console.log('clicked')}
+                >
+                  Add to Cart
+                </button>
               </div>
             </div>
           </Card>
