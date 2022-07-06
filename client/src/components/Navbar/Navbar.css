@@ -9,14 +9,15 @@
 }
 
 .icon-container {
-  width: 24px;
-  height: 27px;
+  width: 35px;
+  height: 30px;
+
 }
 
 .item-count {
   position: absolute;
-  top: 35.5px;
-  right: 38.5px;
+  top: 34px;
+  right: 41.5px;
   font-size: 13px;
   font-weight: bold;
 }
