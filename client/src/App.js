@@ -14,7 +14,6 @@ import Designs from './pages/Designs';
 import Shop from './pages/Shop';
 import Cart from './pages/Cart';
 
-import data from './productData.json';
 
 export default function App() {
   return (
