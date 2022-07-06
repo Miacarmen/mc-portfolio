@@ -9,12 +9,12 @@ const CartDropdown = () => {
   const { cartItems } = useContext(CartContext);
 
   return (
-    <div className='cart-container menu menu-compact dropdown-content shadow bg-base-100 rounded-box w-52'>
-      <div className='cart-items '>
+    <div className='cart-container menu menu-compact dropdown-content shadow bg-base-100 rounded-box w-64'>
+      <div className='cart-items p-2'>
         {cartItems.map((item) => 
           <CartItem key={item.id} cartItem={item} />
         )}
-        <div className='mt-auto ml-10'>
+        <div className='mt-5 ml-14'>
         <Link to='/cart'>
           <button className='btn btn-primary '>View Cart</button>
         </Link>

@@ -1,5 +1,4 @@
-import React from 'react';
-import { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
 // helper function
 const addCartItem = (cartItems, productToAdd) => {
@@ -26,20 +25,34 @@ export const CartContext = createContext({
   setIsCartOpen: () => {},
   cartItems: [],
   addItemToCart: () => {},
+  cartCount: 0,
 });
 
 // provider responsible for creating and updating STATE, and persisting values to the children
 export const CartProvider = ({ children }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
-
   const [cartItems, setCartItems] = useState([]);
+  const [cartCount, setCartCount] = useState(0);
 
+  useEffect(() => {
+    const newCount = cartItems.reduce(
+      (total, cartItem) => total + cartItem.quantity,
+      0
+    )
+    setCartCount(newCount);
+  }, [cartItems]);
   const addItemToCart = (productToAdd) => {
     setCartItems(addCartItem(cartItems, productToAdd));
   };
 
-  const value = { isCartOpen, setIsCartOpen, addItemToCart, cartItems };
-  
+  const value = {
+    isCartOpen,
+    setIsCartOpen,
+    addItemToCart,
+    cartItems,
+    cartCount,
+  };
+
   return (
     // render children in the component so that any descendant can access the value from the provider
     <CartContext.Provider value={value}>{children}</CartContext.Provider>

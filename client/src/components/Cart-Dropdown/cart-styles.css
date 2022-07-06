@@ -1,6 +1,6 @@
 .cart-container {
     position: absolute;
-    width: 200px;
+    width: 250px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -10,10 +10,6 @@
     z-index: 5;
 }
 
-.empty-message {
-    font-size: 18px;
-    margin: 50px auto;
-}
 
 .cart-items {
     height: 270px;
