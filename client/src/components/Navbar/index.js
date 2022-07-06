@@ -1,14 +1,18 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar } from 'react-daisyui';
+
 import Dropdown from './navDropdown';
+import CartIcon from '../Cart-Components/CartIcon';
+import CartDropdown from '../Cart-Components/CartDropdown';
 import './Navbar.css';
 import image from '../../images/heart (8).png';
-import { BiShoppingBag } from 'react-icons/bi';
 
-// * TO-DO: change active link color
+import { CartContext } from '../../context/cart.context';
 
 const Nav = () => {
+  const { isCartOpen } = useContext(CartContext);
 
   return (
     <Navbar className='navbar bg-primary'>
@@ -32,11 +36,12 @@ const Nav = () => {
             Contact
           </Link>
 
-          <Link to='/cart' className='hover:text-primary-focus'>
+          {/* <Link to='/cart' className='hover:text-primary-focus'> */}
             <div class='badge badge-primary'>
-              <BiShoppingBag size={20} />0
+              <CartIcon />
             </div>
-          </Link>
+          {/* </Link> */}
+         {isCartOpen && <CartDropdown />}
         </div>
       </Navbar.End>
     </Navbar>

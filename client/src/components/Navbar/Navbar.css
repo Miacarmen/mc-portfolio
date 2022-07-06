@@ -1,3 +1,26 @@
+.cart-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-container {
+  width: 24px;
+  height: 27px;
+}
+
+.item-count {
+  position: absolute;
+  top: 35.5px;
+  right: 38.5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
     .dropMenu ul {
       /* previous styles */
