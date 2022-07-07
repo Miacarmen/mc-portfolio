@@ -34,6 +34,9 @@ const decreaseItemQty = (cartItems, cartItemToRemove) => {
   return cartItems.map((cartItem) => cartItem.id === cartItemToRemove.id ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem)
 }
 
+const clearCartItem = (cartItems, cartItemToClear) => 
+  cartItems.filter((cartItem) => cartItem.id !== cartItemToClear.id);
+
 // initialize new context for cart
 // create custom hook to provide immediate usage of cart context value for other components to use
 export const CartContext = createContext({
@@ -42,6 +45,7 @@ export const CartContext = createContext({
   cartItems: [],
   addItemToCart: () => {},
   removeCartItem: () => {},
+  clearItemFromCart: () => {},
   cartCount: 0,
 });
 
@@ -67,11 +71,16 @@ export const CartProvider = ({ children }) => {
     setCartItems(decreaseItemQty(cartItems, cartItemToRemove));
   };
 
+  const clearItemFromCart = (cartItemToClear) => {
+    setCartItems(clearCartItem(cartItems, cartItemToClear));
+  };
+
   const value = {
     isCartOpen,
     setIsCartOpen,
     addItemToCart,
     removeCartItem,
+    clearItemFromCart,
     cartItems,
     cartCount,
   };
