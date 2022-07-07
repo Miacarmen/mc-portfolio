@@ -6,7 +6,7 @@ import { Hero, Button } from 'react-daisyui';
 const Home = () => {
   return (
     <Hero>
-      <Hero.Overlay className='min-h-screen bg-base-200' />
+      <Hero.Overlay className='min-h-screen bg-base-200 ' />
       <Hero.Content className='text-center'>
         <div className='max-w-md'>
           <h1 className='myName font-bold'>Mia Carmen</h1>

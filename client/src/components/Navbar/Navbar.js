@@ -1,7 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from 'react-daisyui';
 
 import Dropdown from './navDropdown';
 import CartIcon from '../Cart-Dropdown/CartIcon';
@@ -15,14 +14,14 @@ const Nav = () => {
   const { isCartOpen } = useContext(CartContext);
 
   return (
-    <Navbar className='navbar bg-primary'>
-      <Navbar.Start className='px-2 mx-2'>
+    <div className='navbar bg-primary'>
+      <div className='navbar-start px-2 mx-2'>
         <span className='text-lg font-bold'>
           <img alt='logo' src={image} height='70px' width='70px'></img>
         </span>
-      </Navbar.Start>
+      </div>
 
-      <Navbar.End className='flex-1 px-2 '>
+      <div className='navbar-end flex-1 px-2 '>
         <div className='pr-2'>
           <Dropdown />
         </div>
@@ -43,8 +42,8 @@ const Nav = () => {
           {/* </Link> */}
           {isCartOpen && <CartDropdown />}
         </div>
-      </Navbar.End>
-    </Navbar>
+      </div>
+    </div>
   );
 };
 

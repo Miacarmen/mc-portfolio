@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './index.css';
 
-import Nav from './components/Navbar';
-import Foot from './components/Footer';
+import Nav from './components/Navbar/Navbar';
+import Foot from './components/Footer/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Resume from './pages/Resume';

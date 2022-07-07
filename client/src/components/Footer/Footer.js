@@ -8,15 +8,15 @@ import icon3 from '../../images/instagram.png';
 const Foot = () => {
   return (
     <div>
-      <footer className='footer p-10 bg-base-100 text-base-content justify-items-center'>
-        <div>
+      <footer className='footer p-10 bg-base-100 text-base-content align-center justify-items-center'>
+        <div className='pl-5'>
           <span className='footer-title'>Services</span>
           <p>Web Development</p>
           <p>Graphic Design</p>
           <p>Illustration</p>
           <p>Branding</p>
         </div>
-        <div>
+        <div className='pr-8'>
           <span className='footer-title'>Company</span>
           <Link to='/' className='hover:text-primary-focus'>
             Home
@@ -38,7 +38,7 @@ const Foot = () => {
           </Link>
         </div>
 
-        <div>
+        <div className='mr-5'>
           <span className='footer-title'>Legal</span>
           <p className='link link-hover hover:text-primary-focus'>
             Terms of use
@@ -58,7 +58,7 @@ const Foot = () => {
         <div className='justify-self-center'>
           <img alt='logo' src={image2} height='70px' width='70px'></img>
         </div>
-        <div className='md:place-self-center md:justify-self-end'>
+        <div className='md:place-self-center md:justify-self-end pr-9'>
           <div className='grid grid-flow-col gap-4'>
             <a href='https://github.com/Miacarmen'>
               <img alt='github' src={icon1} height='30px' width='30px'></img>

@@ -22,6 +22,10 @@
   font-weight: bold;
 }
 
+.navbar {
+ width: 100%;
+}
+
 @media screen and (max-width: 768px) {
     .dropMenu ul {
       /* previous styles */
