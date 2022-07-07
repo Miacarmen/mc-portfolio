@@ -8,22 +8,20 @@
 }
 
 .checkout-header {
-    width: 100%;
-    padding: 10px 5px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(254, 215, 239);
+  width: 100%;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(254, 215, 239);
 }
-
 
 .checkoutItemContainer {
-    width: 100%;
-    display: flex;
-    padding: 15px 0;
-    align-items: center;
-    border-bottom: 1px solid rgb(254, 215, 239);
+  width: 100%;
+  display: flex;
+  padding: 15px 0;
+  align-items: center;
+  border-bottom: 1px solid rgb(254, 215, 239);
 }
-
 
 .imgContainer {
   width: 23%;
@@ -40,17 +38,22 @@
 .quantity,
 .price {
   width: 23%;
+  font-size: 18px;
 }
 
 .quantity {
-    padding-left: 20px;
+  display: flex;
+}
+
+.value {
+  margin: 0 10px;
 }
 
 .deleteBtn {
-    padding-right: 15px;
+  padding-right: 15px;
 }
 
 .total {
-    margin-top: 30px;
-    margin-left: auto;
+  margin-top: 30px;
+  margin-left: auto;
 }

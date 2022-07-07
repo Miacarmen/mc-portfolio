@@ -5,9 +5,13 @@ import './checkout-styles.css';
 const CheckoutItem = ({ cartItem }) => {
   const { title, desc, price, quantity, imageURL } = cartItem;
 
-  const { clearItemFromCart } = useContext(CartContext);
+  const { clearItemFromCart, addItemToCart, removeCartItem } =
+    useContext(CartContext);
 
   const clearItem = () => clearItemFromCart(cartItem);
+
+  const increaseQty = () => addItemToCart(cartItem);
+  const decreaseQty = () => removeCartItem(cartItem);
 
   return (
     <div className='checkoutItemContainer'>
@@ -16,10 +20,30 @@ const CheckoutItem = ({ cartItem }) => {
       </div>
       <span className='title'>{title}</span>
       <span className='desc'>{desc}</span>
-      <span className='quantity'>{quantity}</span>
+      <span className='quantity'>
+        <div
+          className='decrease cursor-pointer font-bold text-xl'
+          onClick={decreaseQty}
+        >
+          -
+        </div>
+        <span className='value'>{quantity}</span>
+        <div
+          className='increase cursor-pointer font-bold text-lg'
+          onClick={increaseQty}
+        >
+          +
+        </div>
+      </span>
+
       <span className='price'>${price}</span>
 
-      <div className='deleteBtn font-extrabold cursor-pointer' onClick={clearItem}>&#10005;</div>
+      <div
+        className='deleteBtn font-extrabold cursor-pointer'
+        onClick={clearItem}
+      >
+        &#10005;
+      </div>
     </div>
   );
 };

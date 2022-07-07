@@ -14,7 +14,7 @@ const increaseItemQty = (cartItems, productToAdd) => {
     return cartItems.map((cartItem) =>
       cartItem.id === productToAdd.id
         ? { ...cartItem, quantity: cartItem.quantity + 1 } // if true, return new cart item and increment quantity
-        : cartItem 
+        : cartItem
     );
   }
   // return new array with modified cart items/new cart item
@@ -27,14 +27,18 @@ const decreaseItemQty = (cartItems, cartItemToRemove) => {
     (cartItem) => cartItem.id === cartItemToRemove.id
   );
   // check if qty is equal to 1, if true remove item from cart
-    if(exsistingCartItem.quantity === 1) {
-      return cartItems.filter(cartItem => cartItem.id !== cartItemToRemove.id)
-    }
+  if (exsistingCartItem.quantity === 1) {
+    return cartItems.filter((cartItem) => cartItem.id !== cartItemToRemove.id);
+  }
   // else, return back cartItems with matching cart item with reduced qty
-  return cartItems.map((cartItem) => cartItem.id === cartItemToRemove.id ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem)
-}
+  return cartItems.map((cartItem) =>
+    cartItem.id === cartItemToRemove.id
+      ? { ...cartItem, quantity: cartItem.quantity - 1 }
+      : cartItem
+  );
+};
 
-const clearCartItem = (cartItems, cartItemToClear) => 
+const clearCartItem = (cartItems, cartItemToClear) =>
   cartItems.filter((cartItem) => cartItem.id !== cartItemToClear.id);
 
 // initialize new context for cart
@@ -47,6 +51,7 @@ export const CartContext = createContext({
   removeCartItem: () => {},
   clearItemFromCart: () => {},
   cartCount: 0,
+  cartTotal: 0
 });
 
 // provider responsible for creating and updating STATE, and persisting values to the children
@@ -54,7 +59,9 @@ export const CartProvider = ({ children }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
-
+  const [cartTotal, setCartTotal] = useState(0);
+  
+  // Set cart item total
   useEffect(() => {
     const newCount = cartItems.reduce(
       (total, cartItem) => total + cartItem.quantity,
@@ -62,6 +69,16 @@ export const CartProvider = ({ children }) => {
     );
     setCartCount(newCount);
   }, [cartItems]);
+
+  // set cart total
+  useEffect(() => {
+    const newTotal = cartItems.reduce(
+      (total, cartItem) => total + cartItem.quantity * cartItem.price,
+      0
+    );
+    setCartTotal(newTotal);
+  }, [cartItems]);
+
   // add an item to cart
   const addItemToCart = (productToAdd) => {
     setCartItems(increaseItemQty(cartItems, productToAdd));
@@ -83,6 +100,7 @@ export const CartProvider = ({ children }) => {
     clearItemFromCart,
     cartItems,
     cartCount,
+    cartTotal
   };
 
   return (
