@@ -4,9 +4,7 @@
   "description": "Personal portfolio website showcasing web development, graphic design and illustration work",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -26,9 +24,5 @@
   "bugs": {
     "url": "https://github.com/Miacarmen/mc-portfolio/issues"
   },
-  "homepage": "https://github.com/Miacarmen/mc-portfolio#readme",
-  "dependencies": {
-    "concurrently": "^7.2.2",
-    "css-loader": "^6.7.1"
-  }
+  "homepage": "https://github.com/Miacarmen/mc-portfolio#readme"
 }
