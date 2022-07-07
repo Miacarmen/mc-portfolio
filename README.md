@@ -17,7 +17,7 @@ My portfolio built with react. Checkout my web apps, graphic design projects, pe
 
 ## Deployed Site
 
-[See Live Site Here]()
+[See Live Site Here](https://mia-carmen-portfolio.netlify.app/)
 
 ## Technologies
 
