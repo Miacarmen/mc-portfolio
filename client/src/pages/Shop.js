@@ -3,7 +3,7 @@ import { ProductsContext } from '../context/products.context';
 // Components
 import { Card } from 'react-daisyui';
 import ScrollArrow from '../components/ScrollArrow';
-import ProductCard from '../components/productCard';
+import ProductCard from '../components/productCard/ProductCard';
 // images
 import img5 from '../images/Devils-Disco-Top.png';
 import img6 from '../images/Devils-Disco-Bottom.png';
@@ -15,6 +15,7 @@ import img6 from '../images/Devils-Disco-Bottom.png';
 // change button to say "added"
 
 const Shop = () => {
+
   const {products} = useContext(ProductsContext);
  
   return (

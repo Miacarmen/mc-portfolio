@@ -9,7 +9,7 @@ const Foot = () => {
   return (
     <div>
       <footer className='footer p-10 bg-base-100 text-base-content align-center justify-items-center'>
-        <div className='pl-5'>
+        <div>
           <span className='footer-title'>Services</span>
           <p>Web Development</p>
           <p>Graphic Design</p>
@@ -58,7 +58,7 @@ const Foot = () => {
         <div className='justify-self-center'>
           <img alt='logo' src={image2} height='70px' width='70px'></img>
         </div>
-        <div className='md:place-self-center md:justify-self-end pr-9'>
+        <div className='md:place-self-center md:justify-self-end'>
           <div className='grid grid-flow-col gap-4'>
             <a href='https://github.com/Miacarmen'>
               <img alt='github' src={icon1} height='30px' width='30px'></img>

@@ -1,14 +1,21 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { CartContext } from '../../context/cart.context';
 
 import { Card } from 'react-daisyui';
 
 const ProductCard = ({ product }) => {
+  const [buttonText, setButtonText] = useState('Add To Cart');
+
   const { id, title, imageURL, desc, price } = product;
   const { addItemToCart } = useContext(CartContext);
 
   const addProductToCart = () => addItemToCart(product);
   
+  const handleBtnChange = () => {
+    addProductToCart();
+    setButtonText('Added');
+  }  
+
   return (
     <div>
       <Card
@@ -23,9 +30,9 @@ const ProductCard = ({ product }) => {
           <div className='card-actions justify-center'>
             <button
               className='btn btn-primary buyNow'
-              onClick={addProductToCart}
+              onClick={handleBtnChange}
             >
-              Add to Cart
+              {buttonText}
             </button>
           </div>
         </div>
