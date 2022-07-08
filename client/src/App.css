@@ -88,3 +88,11 @@ body,
     font-size: 4em;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .socialIcon {
+    /* previous styles */
+    width: 20px;
+    height: 20px;
+  }
+}
