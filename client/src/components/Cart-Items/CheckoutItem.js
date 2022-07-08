@@ -39,7 +39,7 @@ const CheckoutItem = ({ cartItem }) => {
       <span className='price'>${price}</span>
 
       <div
-        className='deleteBtn font-extrabold cursor-pointer'
+        className='deleteBtn text-lg font-black cursor-pointer' title='Delete'
         onClick={clearItem}
       >
         &#10005;
