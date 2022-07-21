@@ -9,7 +9,7 @@ const Foot = () => {
   return (
     <div>
       <footer className='footer p-10 bg-base-100 text-base-content align-center justify-items-center'>
-        <div>
+        <div className='pl-4'>
           <span className='footer-title'>Services</span>
           <p>Web Development</p>
           <p>Graphic Design</p>

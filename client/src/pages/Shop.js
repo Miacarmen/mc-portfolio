@@ -3,7 +3,7 @@ import { ProductsContext } from '../context/products.context';
 // Components
 import { Card } from 'react-daisyui';
 import ScrollArrow from '../components/ScrollArrow';
-import ProductCard from '../components/productCard/ProductCard';
+import ProductCard from '../components/ProductCard/ProductCard';
 // images
 import img5 from '../images/Devils-Disco-Top.png';
 import img6 from '../images/Devils-Disco-Bottom.png';
