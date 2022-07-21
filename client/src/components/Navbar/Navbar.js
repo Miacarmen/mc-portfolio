@@ -35,11 +35,10 @@ const Nav = () => {
           <Link to='/contact' className='hover:text-primary-focus'>
             Contact
           </Link>
-          <div className='badge badge-primary'>
+          <div className='cartIcon badge badge-primary'>
             <CartIcon />
           </div>
 
-          {/* </Link> */}
           {isCartOpen && <CartDropdown />}
         </div>
       </div>

@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Hero>
       <Hero.Overlay className='min-h-screen bg-base-200 ' />
-      <Hero.Content className='text-center'>
+      <Hero.Content className='mb-12 text-center'>
         <div className='max-w-md'>
           <h1 className='myName font-bold'>Mia Carmen</h1>
           <h2 className='mt-5 text-3xl'>
@@ -17,7 +17,7 @@ const Home = () => {
           </h2>
           <Link to='/portfolio'>
             <Button className='mt-5 btn bg-primary text-base-content hover:bg-primary-focus border-none'>
-              Learn More
+              See More
             </Button>
           </Link>
         </div>

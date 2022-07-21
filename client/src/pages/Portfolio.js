@@ -23,14 +23,14 @@ const Portfolio = () => {
           <a
             href='https://github.com/Miacarmen/super_girly_note_taker'
             target='blank'
-            className='text-secondary'
+            className='text-neutral'
           >
             Link to Github
           </a>
           <a
             href='https://super-girly-notetaker.herokuapp.com/'
             target='blank'
-            className='text-secondary'
+            className='text-neutral'
           >
             Live Site Here
           </a>
@@ -43,14 +43,14 @@ const Portfolio = () => {
           <a
             href='https://github.com/Miacarmen/adventure-book'
             target='blank'
-            className='text-secondary'
+            className='text-neutral'
           >
             Link to Github
           </a>
           <a
             href='https://book-adventure.herokuapp.com/'
             target='blank'
-            className='text-secondary'
+            className='text-neutral'
           >
             Live Site Here
           </a>
@@ -63,14 +63,14 @@ const Portfolio = () => {
           <a
             href='https://github.com/Miacarmen/Day-Planner'
             target='blank'
-            className='text-secondary'
+            className='text-neutral'
           >
             Link to Github
           </a>
           <a
             href='https://miacarmen.github.io/Day-Planner/'
             target='blank'
-            className='text-secondary'
+            className='text-neutral'
           >
             Live Site Here
           </a>
@@ -82,14 +82,14 @@ const Portfolio = () => {
           <a
             href='https://github.com/Miacarmen/mise-en-place'
             target='blank'
-            className='text-secondary'
+            className='text-neutral'
           >
             Link to Github
           </a>
           <a
             href='https://mise-en-place-planner.herokuapp.com/'
             target='blank'
-            className='text-secondary'
+            className='text-neutral'
           >
             Live Site Here
           </a>
