@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { CartContext } from '../../context/cart.context';
+import { CartContext } from '../../utils/context/cartContext';
 
 import CartItem from './CartItem';
 import './cart-item-styles.css';

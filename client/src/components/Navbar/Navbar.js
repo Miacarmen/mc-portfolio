@@ -8,7 +8,7 @@ import CartDropdown from '../Cart-Dropdown/CartDropdown';
 import './Navbar.css';
 import image from '../../images/heart (8).png';
 
-import { CartContext } from '../../context/cart.context';
+import { CartContext } from '../../utils/context/cartContext';
 
 const Nav = () => {
   const { isCartOpen } = useContext(CartContext);

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { CartContext } from '../../context/cart.context';
+import { CartContext } from '../../utils/context/cartContext';
 
 import { Card } from 'react-daisyui';
 

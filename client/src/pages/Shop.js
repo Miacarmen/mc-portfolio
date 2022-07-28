@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ProductsContext } from '../context/products.context';
+import { ProductsContext } from '../utils/context/productsContext';
 // Components
 import { Card } from 'react-daisyui';
 import ScrollArrow from '../components/ScrollArrow';

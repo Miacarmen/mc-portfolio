@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { BiShoppingBag } from 'react-icons/bi';
 import '../Navbar/Navbar.css';
 
-import { CartContext } from '../../context/cart.context';
+import { CartContext } from '../../utils/context/cartContext';
 
 const CartIcon = () => {
   const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
