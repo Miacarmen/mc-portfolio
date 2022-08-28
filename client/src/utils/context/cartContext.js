@@ -65,7 +65,6 @@ const INITIAL_STATE = {
   cartTotal: 0,
 };
 
-
 // PROVIDER responsible for creating and updating STATE, and persisting values to the children
 export const CartProvider = ({ children }) => {
   const [{ isCartOpen, cartItems, cartCount, cartTotal }, dispatch] =
@@ -111,9 +110,9 @@ export const CartProvider = ({ children }) => {
     updateCartItemsReducer(newCartItems);
   };
 
-  const setIsCartOpen = () => {
-    dispatch({ type: SET_IS_CART_OPEN, payload: Boolean });
-  }
+  const setIsCartOpen = (bool) => {
+    dispatch({ type: SET_IS_CART_OPEN, payload: bool });
+  };
 
   // CONTEXT value
   const value = {
@@ -128,7 +127,8 @@ export const CartProvider = ({ children }) => {
   };
 
   return (
-    // render children in the component so that any descendant can access the value from the provider
+    // The value prop expects an initial state object
     <CartContext.Provider value={value}>{children}</CartContext.Provider>
+    // render children in the component so that any descendant can access the value from the provider
   );
 };

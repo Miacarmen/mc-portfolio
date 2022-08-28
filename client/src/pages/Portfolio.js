@@ -7,7 +7,6 @@ import p2 from '../images/DayPlanner.png';
 import p3 from '../images/MiseEnPlace.png';
 import p4 from '../images/ab.png';
 
-
 const Portfolio = () => {
   return (
     <div className='bg-base-200'>

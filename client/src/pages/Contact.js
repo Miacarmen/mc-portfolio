@@ -88,7 +88,7 @@ const Contact = () => {
         <div className='flex justify-end py-4'>
           <button
             type='submit'
-            class='btn btn-primary hover:bg-secondary border-none'
+            className='btn btn-primary hover:bg-secondary border-none'
           >
             Submit
           </button>
