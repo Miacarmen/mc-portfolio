@@ -6,7 +6,7 @@ import Dropdown from './navDropdown';
 import CartIcon from '../Cart-Dropdown/CartIcon';
 import CartDropdown from '../Cart-Dropdown/CartDropdown';
 import './Navbar.css';
-import image from '../../images/heart (8).png';
+import image from '../../images/heart-wings.png';
 
 import { CartContext } from '../../utils/context/cartContext';
 

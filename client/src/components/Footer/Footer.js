@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import image2 from '../../images/heart (9).png';
+import image2 from '../../images/heart-bottom.png';
 import icon1 from '../../images/github.png';
 import icon2 from '../../images/linkedin.png';
 import icon3 from '../../images/instagram.png';
