@@ -4,7 +4,7 @@ import { Card, Button } from 'react-daisyui';
 const Resume = () => {
   return (
     <div className='wrapper flex justify-center items-center bg-base-200'>
-      <div className='container max-w-screen-lg mx-auto pt-10 pb-10'>
+      <div className='container max-w-screen-lg mx-auto pb-12'>
         <Card className='card bg-base-100 shadow-xl text-center mb-5'>
           <div className='card-body'>
             <h2 className='font-semibold text-xl'>
