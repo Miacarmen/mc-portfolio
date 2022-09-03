@@ -1,33 +1,49 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import swal from 'sweetalert';
+import './contactForm.css';
 
 import img from '../../images/mail4.png';
 
 const ContactForm = () => {
-  const form =  useRef();
+  const form = useRef();
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    
-    emailjs.sendForm('service_8p18qqr', 'template_v9cm6yf', e.target, 'IkePfpVYGM7-q3VeV')
-      .then((result) => {
+
+    emailjs
+      .sendForm(
+        'service_8p18qqr',
+        'template_v9cm6yf',
+        e.target,
+        'IkePfpVYGM7-q3VeV'
+      )
+      .then(
+        (result) => {
+          swal({
+            text: 'Email Sent!',
+            icon: 'success',
+            closeOnClickOutside: true,
+          });
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
-      e.target.reset();
+        }
+      );
+    e.target.reset();
   };
 
   return (
     <div className='card bg-base-100 shadow-xl'>
-      <div className='card-body items-center flex'>
+      <div className='card-body items-center flex pt-12'>
         <div className='bg-base-200 rounded-full py-4 px-5 text-center '>
           <h2 className='card-title'>
-            Let's Chat! Send Me an Email
+            Send Me an Email
             <img src={img} alt='email' className='w-12 h-12 ' />
           </h2>
         </div>
-        <form className='pt-4' ref={form} onSubmit={sendEmail}>
+        <form className='pt-6' ref={form} onSubmit={sendEmail}>
           <div className='grid grid-cols-2 gap-4'>
             <div className='flex flex-col'>
               <label htmlFor='firstName'>First name</label>
@@ -111,7 +127,7 @@ const ContactForm = () => {
             <button
               type='submit'
               value='submit'
-              className='btn btn-primary hover:bg-secondary border-none'
+              className='btn btn-primary hover:bg-primary-focus border-none'
             >
               Submit
             </button>
