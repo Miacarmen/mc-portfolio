@@ -7,9 +7,9 @@ import ContactForm from '../components/ContactForm/contactForm';
 
 const Contact = () => {
   return (
-    <>
-    <ContactForm />
-    </>
+    <div className='wrapper bg-base-200 flex justify-center items-center'>
+      <ContactForm />
+    </div>
   );
 };
 
