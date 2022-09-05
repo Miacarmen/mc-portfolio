@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 // import { store } from './store/store';
+import { Elements } from '@stripe/react-stripe-js';
+import { stripePromise } from './utils/stripe/stripe';
 
 import './index.css';
 
@@ -17,7 +19,9 @@ root.render(
     <ProductsProvider>
       {/* provides context for cart data */}
       <CartProvider>
-        <App />
+        <Elements stripe={stripePromise}>
+          <App />
+        </Elements>
       </CartProvider>
     </ProductsProvider>
     {/* </Provider> */}
