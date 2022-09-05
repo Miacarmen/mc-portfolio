@@ -13,6 +13,7 @@ import Portfolio from './pages/Portfolio';
 import Designs from './pages/Designs';
 import Shop from './pages/Shop';
 import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
             <Route path='/resume' element={<Resume />} />
             <Route path='/shop' element={<Shop />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/checkout' element={<Checkout />} />
             <Route path='*' element={<p>Page Not Found</p>} />
           </Routes>
         </div>

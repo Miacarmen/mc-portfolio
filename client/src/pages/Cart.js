@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../utils/context/cartContext';
-
+import { Link } from 'react-router-dom';
 import CheckoutItem from '../components/Cart-Items/CheckoutItem';
+import Checkout from '../pages/Checkout';
 import '../components/Cart-Items/checkout-styles.css';
 
 // TO-DO: onClick of btn, prompt to add shipping and payment
@@ -43,7 +44,9 @@ const Cart = () => {
         })}
 
         <span className='total font-bold'>Total: ${cartTotal}</span>
-        <button className='btn btn-primary text-white'>Checkout</button>
+        <Link to='/Checkout' element={Checkout}>
+          <button className='btn btn-primary text-white'>Checkout</button>
+        </Link>
       </div>
     </div>
   );
