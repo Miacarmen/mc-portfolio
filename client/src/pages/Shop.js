@@ -3,7 +3,7 @@ import { ProductsContext } from '../utils/context/productsContext';
 // Components
 import { Card } from 'react-daisyui';
 import ScrollArrow from '../components/ScrollArrow';
-import ProductCard from '../components/ProductCard/ProductCard';
+import ProductsCard from '../components/ProductCard/ProductCard';
 // images
 import img5 from '../images/Devils-Disco-Top.png';
 import img6 from '../images/Devils-Disco-Bottom.png';
@@ -18,7 +18,7 @@ const Shop = () => {
       </h1>
       <div className='container max-w-screen-lg mx-auto pb-10 text-primary mt-7'>
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductsCard key={product.id} product={product} />
         ))}
 
         <Card className='card lg:card-side bg-base-100 shadow-xl mb-5'>

@@ -14,9 +14,9 @@ import Designs from './pages/Designs';
 import Shop from './pages/Shop';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
-import Cookies from './pages/CookiePolicy';
-import Privacy from './pages/PrivacyPolicy';
-import Terms from './pages/TermsOfUse';
+import Cookies from './pages/Privacy/CookiePolicy';
+import Privacy from './pages/Privacy/PrivacyPolicy';
+import Terms from './pages/Privacy/TermsOfUse';
 
 
 export default function App() {
