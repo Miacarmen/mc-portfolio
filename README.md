@@ -41,21 +41,23 @@ My portfolio built with react. Checkout my web apps, graphic design projects, pe
 
 ![Stripe](https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=Stripe&logoColor=white) 
 
-![GraphQL](https://img.shields.io/badge/Apollo%20GraphQL-311C87?&style=for-the-badge&logo=Apollo%20GraphQL&logoColor=white)
+<!-- ![GraphQL](https://img.shields.io/badge/Apollo%20GraphQL-311C87?&style=for-the-badge&logo=Apollo%20GraphQL&logoColor=white)
 
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) -->
 
-![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white)
+<!-- ![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white) -->
 
 
 ## Dependencies
 - [react daisyUI](https://react.daisyui.com/?path=/story/welcome--page)
 - [daisyUI](https://daisyui.com/)
+- [react-responsive-carousel](https://www.npmjs.com/package/react-responsive-carousel)
+- [css-loader](https://www.npmjs.com/package/css-loader)
 
 
 ## Usage
 
-Using the links in the navigation bar, check out all my web application projects on the portfolio page, shop my illustrations on the shop page, download my resume on the resume page, learn a little more about me on the about me page or get in touch and send me a message on the contact page.
+Using the links in the navigation bar, check out all my web application and brand design projects on the portfolio page, shop my illustrations on the shop page, download my resume on the resume page, learn a little more about me on the about me page or get in touch and send me a message on the contact page.
 
 ### Credits
 
