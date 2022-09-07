@@ -25,6 +25,32 @@ const ImgCarousel = () => {
           </Carousel>
         </Card.Body>
       </Card>
+
+      <Card className='card-title lg:card-side bg-base-100 shadow-xl mb-5'>
+        <Card.Body>
+          <Card.Title tag='h2'>Converlytics</Card.Title>
+          {/* <p>{image.title}</p> */}
+          <Carousel showArrows autoPlay stopOnHover>
+            {/* <div>
+              <p></p>
+              <img />
+            </div> */}
+          </Carousel>
+        </Card.Body>
+      </Card>
+
+      <Card className='card-title lg:card-side bg-base-100 shadow-xl mb-5'>
+        <Card.Body>
+          <Card.Title tag='h2'>Cherry Bomb Vapes</Card.Title>
+          {/* <p>{image.title}</p> */}
+          <Carousel showArrows autoPlay stopOnHover>
+            {/* <div>
+              <p></p>
+              <img />
+            </div> */}
+          </Carousel>
+        </Card.Body>
+      </Card>
     </>
   );
 };
