@@ -46,9 +46,10 @@ const Foot = () => {
           <p className='link link-hover hover:text-primary-focus'>
             Privacy policy
           </p>
-          <p className='link link-hover hover:text-primary-focus'>
+          <Link to='/cookiepolicy'><p className='link link-hover hover:text-primary-focus'>
             Cookie policy
           </p>
+          </Link>
         </div>
       </footer>
       <footer className='footer flex grid grid-cols-3 px-10 pt-2 pb-2 bg-base-100 text-base-content border-base-300'>
