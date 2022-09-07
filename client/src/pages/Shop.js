@@ -8,11 +8,6 @@ import ProductCard from '../components/ProductCard/ProductCard';
 import img5 from '../images/Devils-Disco-Top.png';
 import img6 from '../images/Devils-Disco-Bottom.png';
 
-// TO-DO: When a user clicks add to cart,
-// add item to cart,
-// update number on cart icon,
-// change button to say "added"
-
 const Shop = () => {
   const { products } = useContext(ProductsContext);
 
