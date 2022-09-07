@@ -4,8 +4,8 @@ const CookiePolicy = () => {
   return (
     <div className='wrapper bg-base-200 flex justify-center items-center'>
       <div className='container max-w-screen-lg mx-auto py-6'>
-        <div className='card w-96 bg-base-100 shadow-xl'>
-          <h1 className='card-title'>Cookie Policy</h1>
+        <div className='card w-96 bg-base-100 shadow-xl px-3'>
+          <h1 className='card-title pt-5'>Cookie Policy</h1>
           <p className='font-mono pb-3'>Last Updated Sept 6, 2022</p>
           <p>
             Please read this cookie policy carefully before using our website.
@@ -43,7 +43,9 @@ const CookiePolicy = () => {
             it visits certain other websites.
           </p>
 
-          <h3 className='font-bold pt-3 pb-1'>What types of Cookies do we use?</h3>
+          <h3 className='font-bold pt-3 pb-1'>
+            What types of Cookies do we use?
+          </h3>
           <p className='py-2 italic font-medium'>Necessary Cookies</p>
           <p>
             Necessary cookies allow us to offer you the best possible experience
@@ -53,7 +55,7 @@ const CookiePolicy = () => {
             placing an order or placed an order.
           </p>
 
-          <p className='py-2 talic font-medium'>Functionality cookies</p>
+          <p className='py-2 italic font-medium'>Functionality cookies</p>
           <p>
             Functionality cookies let us operate the site in accordance with the
             choices you make. For example, we will recognize your username and
@@ -89,7 +91,7 @@ const CookiePolicy = () => {
           </p>
 
           <h3 className='font-bold pt-3 pb-1'>Contacting us:</h3>
-          <p>
+          <p className='pb-6'>
             If you have any questions about this policy or our use of cookies,
             please contact us at miacarmengd@gmail.com
           </p>

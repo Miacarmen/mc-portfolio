@@ -15,6 +15,8 @@ import Shop from './pages/Shop';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Cookies from './pages/CookiePolicy';
+import Privacy from './pages/PrivacyPolicy';
+import Terms from './pages/TermsOfUse';
 
 
 export default function App() {
@@ -34,6 +36,8 @@ export default function App() {
             <Route path='/cart' element={<Cart />} />
             <Route path='/checkout' element={<Checkout />} />
             <Route path='/cookiepolicy' element={<Cookies />} />
+            <Route path='/privacypolicy' element={<Privacy />} />
+            <Route path='/termsofuse' element={<Terms />} />
             <Route path='*' element={<p>Page Not Found</p>} />
           </Routes>
         </div>

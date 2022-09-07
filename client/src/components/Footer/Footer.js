@@ -40,15 +40,20 @@ const Foot = () => {
 
         <div className='mr-5'>
           <span className='footer-title'>Legal</span>
-          <p className='link link-hover hover:text-primary-focus'>
-            Terms of use
-          </p>
-          <p className='link link-hover hover:text-primary-focus'>
-            Privacy policy
-          </p>
-          <Link to='/cookiepolicy'><p className='link link-hover hover:text-primary-focus'>
-            Cookie policy
-          </p>
+          <Link to='/termsofuse'>
+            <p className='link link-hover hover:text-primary-focus'>
+              Terms of use
+            </p>
+          </Link>
+          <Link to='/privacypolicy'>
+            <p className='link link-hover hover:text-primary-focus'>
+              Privacy policy
+            </p>
+          </Link>
+          <Link to='/cookiepolicy'>
+            <p className='link link-hover hover:text-primary-focus'>
+              Cookie policy
+            </p>
           </Link>
         </div>
       </footer>
@@ -62,13 +67,31 @@ const Foot = () => {
         <div className='md:place-self-center md:justify-self-end'>
           <div className='socialIcons grid grid-flow-col gap-4'>
             <a href='https://github.com/Miacarmen'>
-              <img id='socialIcon' alt='github' src={icon1} height='30px' width='30px'></img>
+              <img
+                id='socialIcon'
+                alt='github'
+                src={icon1}
+                height='30px'
+                width='30px'
+              ></img>
             </a>
             <a href='https://www.linkedin.com/in/mia-carmen-7750a6b8/'>
-              <img id='socialIcon' alt='linkedin' src={icon2} height='30px' width='30px'></img>
+              <img
+                id='socialIcon'
+                alt='linkedin'
+                src={icon2}
+                height='30px'
+                width='30px'
+              ></img>
             </a>
             <a href='https://www.instagram.com/thedevilsdisko/'>
-              <img id='socialIcon' alt='instagram' src={icon3} height='30px' width='30px'></img>
+              <img
+                id='socialIcon'
+                alt='instagram'
+                src={icon3}
+                height='30px'
+                width='30px'
+              ></img>
             </a>
           </div>
         </div>
