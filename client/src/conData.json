@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Hero Landing Page Image",
+        "imageURL": "https://i.ibb.co/4gHYccY/Converlytics-Landing-Page.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Frame Animation on Home Page",
+        "imageURL": "https://i.ibb.co/TH2k4yn/Animation2-loop.gif"
+    },
+    {
+        "id": 3,
+        "title": "Email Registration Page",
+        "imageURL": "https://i.ibb.co/crtD1c0/Conv-Registration-Page.png",
+        "width": "300",
+        "height": "300"
+    },
+    {
+        "id": 4,
+        "title": "Page Background for a Video Page",
+        "imageURL": "https://i.ibb.co/XpNscng/Conv-Video-Page-BG.png"
+    },
+    {
+        "id": 5,
+        "title": "Company Logo",
+        "imageURL": "https://i.ibb.co/m0RrzYz/My-project-1.png"
+    }
+]

@@ -1,7 +1,9 @@
 import React from 'react';
-import { PaymentElement, CardElement } from '@stripe/react-stripe-js';
+import { CardElement } from '@stripe/react-stripe-js';
 import { Card, Button } from 'react-daisyui';
 import Styles from './CheckoutForm.styles.css';
+
+// TO-DO: sweet alert on payment completion
 
 const CheckoutForm = () => {
   return (

@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './index.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import Nav from './components/Navbar/Navbar';
 import Foot from './components/Footer/Footer';

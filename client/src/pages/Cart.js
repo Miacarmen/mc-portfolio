@@ -5,8 +5,7 @@ import CheckoutItem from '../components/Cart-Items/CheckoutItem';
 import Checkout from '../pages/Checkout';
 import '../components/Cart-Items/checkout-styles.css';
 
-// TO-DO: onClick of btn, prompt to add shipping and payment
-// TO-DO: sweet alert on payment completion
+// TO-DO: add cart items to local storage to persist data on page refresh
 const Cart = () => {
   const { cartItems, cartTotal } = useContext(CartContext);
 
