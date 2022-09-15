@@ -83,7 +83,9 @@ const CookiePolicy = () => {
 
           <p>
             Alternatively, you can visit
-            <a href='http://www.internetcookies.com'>www.internetcookies.com</a>
+            <a href='https://www.internetcookies.com'>
+              www.internetcookies.com
+            </a>
             , which contains comprehensive information on how to do this on a
             wide variety of browsers and devices. You will find general
             information about cookies and details on how to delete cookies from

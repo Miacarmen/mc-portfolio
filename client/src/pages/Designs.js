@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Card } from 'react-daisyui';
 // Components
 import Paginate from '../components/Paginate';
 import ScrollArrow from '../components/ScrollArrow';

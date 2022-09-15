@@ -5,8 +5,8 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Carousel.styles.css';
 // Image Data
-import cbData from '../../cbData.json';
-import conData from '../../conData.json';
+import cbData from '../../utils/data/chubbyData.json';
+import convData from '../../utils/data/convData.json';
 
 const ImgCarousel = () => {
   return (
@@ -32,7 +32,7 @@ const ImgCarousel = () => {
         <Card.Body>
           <Card.Title tag='h2'>Converlytics</Card.Title>
           <Carousel showArrows autoPlay stopOnHover>
-            {conData.map((data) => {
+            {convData.map((data) => {
               return (
                 <div key={data.id}>
                   <p>{data.title}</p>

@@ -1,4 +1,4 @@
-.checkoutContainer {
+#checkoutContainer {
     height: 300px;
     width: 50vw;
     display: flex;
@@ -8,13 +8,13 @@
     margin: 30px auto;
 }
 
-.paymentForm {
+#paymentForm {
     height: 100px;
     min-width: 500px;
     align-items: center;
-}
+} 
 
-.card {
+#cardEl {
     padding: 10px 20px 11px;
     width: 100%;
 }

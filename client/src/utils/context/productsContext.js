@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react';
 
-import PRODUCTS from '../../productData.json';
+import PRODUCTS from '../../utils/data/productData.json';
 
 // the value you want to access
 export const ProductsContext = createContext({
