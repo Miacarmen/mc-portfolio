@@ -24,11 +24,5 @@
   "bugs": {
     "url": "https://github.com/Miacarmen/mc-portfolio/issues"
   },
-  "homepage": "https://miadcarmen.com",
-  "devDependencies": {
-    "concurrently": "^7.3.0"
-  },
-  "dependencies": {
-    "css-loader": "^6.7.1"
-  }
+  "homepage": "https://github.com/Miacarmen/mc-portfolio#readme"
 }

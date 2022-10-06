@@ -7,6 +7,7 @@ import './Carousel.styles.css';
 // Image Data
 import cbData from '../../utils/data/chubbyData.json';
 import convData from '../../utils/data/convData.json';
+import narjData from '../../utils/data/narjData.json';
 
 const ImgCarousel = () => {
   return (
@@ -15,7 +16,7 @@ const ImgCarousel = () => {
         <Card.Body>
           <Card.Title tag='h2'>Chubby Snacks</Card.Title>
           {/* <p>{image.title}</p> */}
-          <Carousel showArrows autoPlay stopOnHover swipeable>
+          <Carousel showArrows autoPlay stopOnHover swipeable dynamicHeight>
             {cbData.map((data) => {
               return (
                 <div key={data.id}>
@@ -31,7 +32,7 @@ const ImgCarousel = () => {
       <Card className='card-title lg:card-side bg-base-100 shadow-xl mb-5'>
         <Card.Body>
           <Card.Title tag='h2'>Converlytics</Card.Title>
-          <Carousel showArrows autoPlay stopOnHover>
+          <Carousel showArrows autoPlay stopOnHover dynamicHeight>
             {convData.map((data) => {
               return (
                 <div key={data.id}>
@@ -46,13 +47,17 @@ const ImgCarousel = () => {
 
       <Card className='card-title lg:card-side bg-base-100 shadow-xl mb-5'>
         <Card.Body>
-          <Card.Title tag='h2'>Cherry Bomb Vapes</Card.Title>
+          <Card.Title tag='h2'>North American Restoritive Justice</Card.Title>
 
-          <Carousel showArrows autoPlay stopOnHover>
-            {/* <div>
-              <p></p>
-              <img />
-            </div> */}
+          <Carousel showArrows autoPlay stopOnHover dynamicHeight>
+          {narjData.map((data) => {
+              return (
+                <div key={data.id}>
+                  <p>{data.title}</p>
+                  <img alt={`${data.title}`} src={data.imageURL} />
+                </div>
+              );
+            })}
           </Carousel>
         </Card.Body>
       </Card>

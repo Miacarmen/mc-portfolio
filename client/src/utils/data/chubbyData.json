@@ -1,47 +1,47 @@
 [
-    {
-      "id": 1,
-      "title": "Product Packaging",
-      "imageURL": "https://i.ibb.co/tzXPr3X/cb-packaging-pink.png"
-    },
-    {
-        "id": 2,
-        "title": "Product Packaging",
-        "imageURL": "https://i.ibb.co/MpPF4cC/Blue-Final-Packaging-05.jpg"
-      },
-      {
-        "id": 3,
-        "title": "Product Packaging",
-        "imageURL": "https://i.ibb.co/tzXPr3X/cb-packaging-pink.png"
-      },
-      {
-        "id": 4,
-        "title": "Product Packaging",
-        "imageURL": "https://i.ibb.co/2grdz40/Blue-Sun-Final-Packaging-04.jpg"
-      },
-      {
-        "id": 5,
-        "title": "Retail Display Packaging",
-        "imageURL": "https://i.ibb.co/HTLWZGZ/Display-Box-Specs-01.png"
-      },
-      {
-        "id": 6,
-        "title": "Brand Color Template",
-        "imageURL": "https://i.ibb.co/8Xsd2yG/CB-Colors-Temp.png"
-      },
-      {
-        "id": 7,
-        "title": "Website Hero Image",
-        "imageURL": "https://i.ibb.co/HNkC2zG/CB-Hero.png"
-      },
-      {
-        "id": 8,
-        "title": "Email Campaign Banner",
-        "imageURL": "https://i.ibb.co/28477Nm/Chubby-Email-Banner.png"
-      },
-      {
-        "id": 9,
-        "title": "Company Logo",
-        "imageURL": "https://i.ibb.co/TkSCmHk/CB-Final-Logo.png"
-      }
+  {
+    "id": 1,
+    "title": "Product Packaging",
+    "imageURL": "https://i.ibb.co/tzXPr3X/cb-packaging-pink.png"
+  },
+  {
+    "id": 2,
+    "title": "Product Packaging",
+    "imageURL": "https://i.ibb.co/kMhtTKV/cb-blue-packaging.png"
+  },
+  {
+    "id": 3,
+    "title": "Product Packaging",
+    "imageURL": "https://i.ibb.co/t8ftYnJ/cb-dkred-packaging.png"
+  },
+  {
+    "id": 4,
+    "title": "Product Packaging",
+    "imageURL": "https://i.ibb.co/7QhVZN6/cb-ltblue-packaging.png"
+  },
+  {
+    "id": 5,
+    "title": "Retail Display Packaging",
+    "imageURL": "https://i.ibb.co/HTLWZGZ/Display-Box-Specs-01.png"
+  },
+  {
+    "id": 6,
+    "title": "Retail Product Packaging",
+    "imageURL": "https://i.ibb.co/p2L4ySd/cb-product-image.png"
+  },
+  {
+    "id": 7,
+    "title": "Website Hero Image",
+    "imageURL": "https://i.ibb.co/HNkC2zG/CB-Hero.png"
+  },
+  {
+    "id": 8,
+    "title": "Email Campaign Banner",
+    "imageURL": "https://i.ibb.co/28477Nm/Chubby-Email-Banner.png"
+  },
+  {
+    "id": 9,
+    "title": "Company Logo",
+    "imageURL": "https://i.ibb.co/TkSCmHk/CB-Final-Logo.png"
+  }
 ]
