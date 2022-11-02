@@ -12,7 +12,7 @@ const Designs = () => {
     <div className='wrapper bg-base-200'>
       <div className='container max-w-screen-lg mx-auto pb-10 text-primary'>
         <h1 className='pt-5 pb-5 text-3xl font-bold text-base-300 text-center'>
-          Graphic Design
+          UX/UI, & Graphic Design
         </h1>
     <ImgCarousel />
    
