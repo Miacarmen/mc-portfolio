@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import image2 from '../../images/heart-bottom.png';
 import icon1 from '../../images/github.png';
 import icon2 from '../../images/linkedin.png';
@@ -8,15 +9,15 @@ import icon3 from '../../images/instagram.png';
 const Foot = () => {
   return (
     <div>
-      <footer className='footer p-10 bg-base-100 text-base-content align-center justify-items-center'>
-        <div className='pl-3'>
+      <footer className='footer p-10 bg-base-100 text-base-content align-center justify-items-center flex grid grid-cols-3'>
+        <div>
           <span className='footer-title'>Services</span>
           <p>Web Development</p>
           <p>Graphic Design</p>
           <p>Illustration</p>
           <p>Branding</p>
         </div>
-        <div className='pr-8'>
+        <div>
           <span className='footer-title'>Company</span>
           <Link to='/' className='hover:text-primary-focus'>
             Home
@@ -38,7 +39,7 @@ const Foot = () => {
           </Link>
         </div>
 
-        <div className='mr-5'>
+        <div>
           <span className='footer-title'>Legal</span>
           <Link to='/termsofuse'>
             <p className='link link-hover hover:text-primary-focus'>
