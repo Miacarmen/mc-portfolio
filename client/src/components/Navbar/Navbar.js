@@ -17,7 +17,7 @@ const Nav = () => {
     <div className='navbar bg-primary'>
       <div className='navbar-start px-2 mx-2'>
         <span className='text-lg font-bold'>
-          <img alt='logo' src={image} height='70px' width='70px'></img>
+          <Link to="/"><img alt='logo' src={image} height='70px' width='70px'></img></Link>
         </span>
       </div>
 
