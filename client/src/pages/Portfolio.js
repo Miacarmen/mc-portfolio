@@ -2,10 +2,12 @@ import React from 'react';
 import { Card } from 'react-daisyui';
 import ScrollArrow from '../components/ScrollArrow';
 import Paginate from '../components/Paginate';
-import p1 from '../images/GirlyNoteTaker.png';
-import p2 from '../images/DayPlanner.png';
-import p3 from '../images/MiseEnPlace.png';
-import p4 from '../images/ab.png';
+import p1 from '../images/Aloha.png';
+import p2 from '../images/GirlyNoteTaker.png';
+import p3 from '../images/ab.png';
+import p4 from '../images/DayPlanner.png';
+import p5 from '../images/MiseEnPlace.png';
+
 
 const Portfolio = () => {
   return (
@@ -14,6 +16,20 @@ const Portfolio = () => {
         <h1 className='pt-5 text-3xl font-bold text-base-300 text-center'>
           Web Applications
         </h1>
+        <Card>
+          <h1 className='mt-7 font-bold text-2xl'>
+            Aloha Air Conditioning & Heating
+          </h1>
+          <p>Web App made with Squarespace for lower budget client</p>
+          <a
+            href='https://www.alohaairconditioningandheating.com/'
+            target='blank'
+            className='text-neutral'
+          >
+            Live Site Here
+          </a>
+          <img alt='Aloha HVAC' src={p1}></img>
+        </Card>
         <Card>
           <h1 className='mt-7 font-bold text-2xl'>
             A Cute and Girly Notetaker
@@ -33,7 +49,7 @@ const Portfolio = () => {
           >
             Live Site Here
           </a>
-          <img alt='Girly Note Taker' src={p1}></img>
+          <img alt='Girly Note Taker' src={p2}></img>
         </Card>
 
         <Card>
@@ -53,7 +69,7 @@ const Portfolio = () => {
           >
             Live Site Here
           </a>
-          <img alt='Adventure Book' src={p4}></img>
+          <img alt='Adventure Book' src={p3}></img>
         </Card>
 
         <Card>
@@ -73,7 +89,7 @@ const Portfolio = () => {
           >
             Live Site Here
           </a>
-          <img alt='Day Planner' src={p2}></img>
+          <img alt='Day Planner' src={p4}></img>
         </Card>
         <Card>
           <h1 className='mt-7 font-bold text-2xl'>Mise en Place</h1>
@@ -92,7 +108,7 @@ const Portfolio = () => {
           >
             Live Site Here
           </a>
-          <img alt='Mise en Place' src={p3}></img>
+          <img alt='Mise en Place' src={p5}></img>
         </Card>
 
         <ScrollArrow />
