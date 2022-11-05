@@ -13,7 +13,7 @@ const Resume = () => {
             <div className='card-actions justify-center'>
               <Button className='btn btn-primary '>
                 <a
-                  href='../images/Mia-Carmen_Web_Developer.png'
+                  href='../images/Mia-Carmen-Developer-and-Designer.png'
                   download='Mia-Carmen_Web_Developer.png'
                 >
                   Download
