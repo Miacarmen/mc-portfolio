@@ -35,10 +35,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='card w-96 bg-base-100 shadow-xl'>
+    <div className='card w-100 bg-base-100 shadow-xl'>
       <div className='card-body items-center flex pt-12'>
         <div className='bg-base-200 rounded-full py-4 px-5 text-center '>
-          <h2 className='card-title'>
+          <h2 className='card-title px-20'>
             Send Me an Email
             <img src={img} alt='email' className='w-12 h-12 ' />
           </h2>

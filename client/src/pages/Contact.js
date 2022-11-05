@@ -7,8 +7,8 @@ import ContactForm from '../components/ContactForm/contactForm';
 
 const Contact = () => {
   return (
-    <div className='wrapper bg-base-200 flex justify-center items-center'>
-      <div className='container max-w-screen-lg mx-auto pb-12'>
+    <div className='wrapper flex justify-center items-center bg-base-200'>
+      <div className='container max-w-screen-lg mx-auto pb-12 '>
         <ContactForm />
       </div>
     </div>
