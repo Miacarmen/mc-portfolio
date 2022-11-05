@@ -3,10 +3,11 @@ import { Card } from 'react-daisyui';
 import ScrollArrow from '../components/ScrollArrow';
 import Paginate from '../components/Paginate';
 import p1 from '../images/Aloha.png';
-import p2 from '../images/GirlyNoteTaker.png';
-import p3 from '../images/ab.png';
-import p4 from '../images/DayPlanner.png';
-import p5 from '../images/MiseEnPlace.png';
+import p2 from '../images/Harp.png'
+import p3 from '../images/GirlyNoteTaker.png';
+import p4 from '../images/ab.png';
+import p5 from '../images/DayPlanner.png';
+import p6 from '../images/MiseEnPlace.png';
 
 
 const Portfolio = () => {
@@ -32,6 +33,27 @@ const Portfolio = () => {
         </Card>
         <Card>
           <h1 className='mt-7 font-bold text-2xl'>
+            Harp
+          </h1>
+          <p>Like Yelp, but for couples to find things to do together</p>
+          <a
+            href='https://github.com/Miacarmen/harp'
+            target='blank'
+            className='text-neutral'
+          >
+            Link to Github
+          </a>
+          <a
+            href='https://github.com/Miacarmen/harp'
+            target='blank'
+            className='text-neutral'
+          >
+            Live Site Here
+          </a>
+          <img alt='Harp' src={p2}></img>
+        </Card>
+        <Card>
+          <h1 className='mt-7 font-bold text-2xl'>
             A Cute and Girly Notetaker
           </h1>
           <p>Take Notes with Express, but in a Cute Girly Way</p>
@@ -49,7 +71,7 @@ const Portfolio = () => {
           >
             Live Site Here
           </a>
-          <img alt='Girly Note Taker' src={p2}></img>
+          <img alt='Girly Note Taker' src={p3}></img>
         </Card>
 
         <Card>
@@ -69,7 +91,7 @@ const Portfolio = () => {
           >
             Live Site Here
           </a>
-          <img alt='Adventure Book' src={p3}></img>
+          <img alt='Adventure Book' src={p4}></img>
         </Card>
 
         <Card>
@@ -89,7 +111,7 @@ const Portfolio = () => {
           >
             Live Site Here
           </a>
-          <img alt='Day Planner' src={p4}></img>
+          <img alt='Day Planner' src={p5}></img>
         </Card>
         <Card>
           <h1 className='mt-7 font-bold text-2xl'>Mise en Place</h1>
@@ -108,7 +130,7 @@ const Portfolio = () => {
           >
             Live Site Here
           </a>
-          <img alt='Mise en Place' src={p5}></img>
+          <img alt='Mise en Place' src={p6}></img>
         </Card>
 
         <ScrollArrow />
