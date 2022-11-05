@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "title": "Aloha Air Conditioning & Heating",
+        "description": "Web App made with Squarespace for lower budget client",
+        "siteLink": "https://www.alohaairconditioningandheating.com/",
+        "imageURL": "https://i.ibb.co/jw5Q0jp/Screen-Shot-2022-11-04-at-2-09-59-PM.png"
+    },
+    {
+        "id": 2,
+        "title": "Harp",
+        "description": "Like Yelp, but for couples to find things to do together",
+        "githubLink": "https://github.com/Miacarmen/harp",
+        "siteLink": "",
+        "imageURL": "https://i.ibb.co/NymTTPP/Screen-Shot-2022-11-04-at-3-10-52-PM.png"
+    },
+    {
+        "id": 3,
+        "title": "A Cute and Girly Notetaker",
+        "description": "Take Notes with Express, but in a Cute Girly Way",
+        "githubLink": "https://github.com/Miacarmen/super_girly_note_taker",
+        "siteLink": "https://super-girly-notetaker.herokuapp.com/",
+        "imageURL": "https://i.ibb.co/nbKdbpt/Screen-Shot-2022-05-15-at-8-36-11-PM.png"
+    },
+    {
+        "id": 4,
+        "title": "Adventure Book",
+        "description": "Get Inspired, Plan Your Next Adventure",
+        "githubLink": "https://github.com/Miacarmen/adventure-book",
+        "siteLink": "https://book-adventure.herokuapp.com/",
+        "imageURL": "https://i.ibb.co/LYQpDg8/Screen-Shot-2022-09-20-at-2-33-19-PM.png"
+    },
+    {
+        "id": 5,
+        "title": "Day Planner",
+        "description": "Plan Your Day Using moment.js",
+        "githubLink": "https://github.com/Miacarmen/Day-Planner",
+        "siteLink": "https://miacarmen.github.io/Day-Planner/",
+        "imageURL": "https://i.ibb.co/Sr9Zv0N/Screen-Shot-2022-05-15-at-8-36-51-PM.png"
+    },
+    {
+        "id": 6,
+        "title": "Mise en Place",
+        "description": "Time Management Software",
+        "githubLink": "https://github.com/Miacarmen/mise-en-place",
+        "siteLink": "https://mise-en-place-planner.herokuapp.com/",
+        "imageURL": "https://i.ibb.co/KjCSfBd/Screen-Shot-2022-05-15-at-8-37-28-PM.png"
+    }
+]
