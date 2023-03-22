@@ -19,6 +19,9 @@ import Cookies from './pages/Privacy/CookiePolicy';
 import Privacy from './pages/Privacy/PrivacyPolicy';
 import Terms from './pages/Privacy/TermsOfUse';
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-5HSK3E5HNF"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 export default function App() {
   return (
